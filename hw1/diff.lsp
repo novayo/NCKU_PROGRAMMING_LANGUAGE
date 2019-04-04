@@ -9,7 +9,6 @@
 )
 (setq getIn1 (reverse getIn1))
 
-
 (defvar in2 (open "./res/file2.txt" :if-does-not-exist nil))
 (defvar countIn2 0)
 (defvar getIn2 ())

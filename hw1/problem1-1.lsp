@@ -1,0 +1,16 @@
+(defun prime (input_number)
+    (let ((i 2))
+        (loop
+            (cond ((> (* i i) input_number) 
+                (format t "True~%")
+                (return)))
+            (cond ((= (mod input_number i) 0)
+                (format t "False~%")
+                (return)
+                ))
+            (setq i (+ i 1))
+        )
+    )
+)
+
+(prime 997)

@@ -1,0 +1,10 @@
+(defun palindrome (input_list)
+    (let ((tmpList (reverse input_list)))
+        (if (equal tmpList input_list)
+            (format t "True~%")
+            (format t "False~%")
+        )
+    )
+)
+
+(palindrome '(cat dog bird bird dog cat))
