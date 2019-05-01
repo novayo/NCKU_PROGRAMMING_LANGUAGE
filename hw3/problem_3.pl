@@ -1,3 +1,4 @@
+% Reference: https://stackoverflow.com/questions/21161624/define-graph-in-prolog-edge-and-path-finding-if-there-is-a-path-between-two-ve
 path(X,Y) :-
     findall(A-B, edge(A,B), Es),
     vertices_edges_to_ugraph([],Es,G),

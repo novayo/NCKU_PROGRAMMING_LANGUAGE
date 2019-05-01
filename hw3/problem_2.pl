@@ -1,3 +1,4 @@
+% Reference: https://gist.github.com/WaitingLin/9b6a936bb49450bacc73
 ancestor(A,B) :- parent(A,B). 
 ancestor(A,B) :- parent(X,B), ancestor(A,X). 
 
