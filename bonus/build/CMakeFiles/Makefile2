@@ -68,8 +68,8 @@ CMAKE_BINARY_DIR = /Users/shihchungyu/NCKU/Programming_Language/homework/NCKU_PR
 # Target rules for target CMakeFiles/NANATest.dir
 
 # All Build rule for target.
-CMakeFiles/NANATest.dir/all: ext/nana/CMakeFiles/nana.dir/all
 CMakeFiles/NANATest.dir/all: ext/fmt/CMakeFiles/fmt.dir/all
+CMakeFiles/NANATest.dir/all: ext/nana/CMakeFiles/nana.dir/all
 	$(MAKE) -f CMakeFiles/NANATest.dir/build.make CMakeFiles/NANATest.dir/depend
 	$(MAKE) -f CMakeFiles/NANATest.dir/build.make CMakeFiles/NANATest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shihchungyu/NCKU/Programming_Language/homework/NCKU_PROGRAMMING_LANGUAGE/bonus/build/CMakeFiles --progress-num=1,2 "Built target NANATest"
