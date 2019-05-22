@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+var MATRIX_SIZE int = 2000
+
 type Matrix2d struct {
 	Rows    int
 	Columns int
@@ -94,7 +96,7 @@ func (m Matrix2d) getRow(col int) []float64 {
 
 func main() {
 
-	AMatrix_rows, AMatrix_cols := 10, 10
+	AMatrix_rows, AMatrix_cols := MATRIX_SIZE, MATRIX_SIZE
 	AMatrix_values := make([]float64, AMatrix_rows*AMatrix_cols)
 
 	// 初始陣列值
@@ -106,6 +108,8 @@ func main() {
 
 	// 建立m struct (初始陣列)
 	AMatrix := Matrix2d{AMatrix_rows, AMatrix_cols, AMatrix_values}
+
+	// Print out initialized Matrix
 	/*
 		fmt.Println("AMatrix: ")
 		for i := 0; i < AMatrix_rows; i++ {
